@@ -8,7 +8,7 @@ contract KPACOTA is ERC20, Ownable {
     uint8 private constant DECIMALS = 0;
     uint256 private constant MAX_SUPPLY = 1;
 
-    address public osumPosum;
+    address public immutable osumPosum;
     uint256 public lastSignalTime;
     uint256 public constant COOLDOWN = 60 seconds;
 
