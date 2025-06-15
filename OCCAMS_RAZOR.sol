@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract OCCAMS_RAZOR is ERC20Burnable, Ownable {
-    address public OCCAM;
+    address public immutable OCCAM;
     mapping(address => uint256) public lastCooldownStart;
 
     event TimeOfDayIsEverywhere(string message, uint256 timestamp);
